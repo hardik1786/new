@@ -52,9 +52,9 @@
                     </a>
                 </li>
                 <li>
-                     <a href="D:\Galaxy pics and whatsapp img\20230115_221902.jpg">
+                     <img src="D:\Galaxy pics and whatsapp img\20230115_221902.jpg">
                         image1
-                     </a>
+                     </img>
                 </li>
             </ul>
         </header>
