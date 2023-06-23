@@ -52,7 +52,6 @@
                     </a>
                 </li>
                 <li>
-                     <img src="D:\Galaxy pics and whatsapp img\20230115_221902.jpg">
                         image1
                      </img>
                 </li>
