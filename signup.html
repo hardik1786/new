@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- <title>Document</title> -->
+    <style>
+        body{
+            background: url(Crate-_-Barrel_s-homepage.jpg);
+            background-size: cover;
+            
+        }
+        .custom-form {
+            border-radius: 15px;
+            background-color: aqua;
+            /* padding: 20px; */
+            margin-left: 750px;
+            margin-top: 100px; /* You can adjust this value to move the form more or less to the right */
+        }
+    </style>
+</head>
+<body>
+    <div class="d-flex justify-content-center align-items-center vh-100 " style="background: url(bcak2.jpg) no-repeat round;
+    background-size:  550px; background-position-x: 850px; background-position-y: 10px; box-shadow: black 20px; " >
+    <form action="signup.php" class="w-15 custom-form" style="border-radius:15px; background-color: gray; padding:30px;" onsubmit="return validate()" method="POST";>
+        <h2 class="text-center" style="font-size: 25px;" >
+            CREATE ACCOUNT
+        </h2>
+        <h3 class="text-center" style="font-size: 15px;">
+            Sign Up
+        </h3>
+        <input type="text" name="uname" class="mt-2 form-control" placeholder="Username">
+        <input type="email" name="umail" class="mt-2 form-control" placeholder="E-mail address">
+        <input type="password" class="mt-2 form-control" placeholder="Password" name="pass1" id="pass1">
+        <input type="password" class="mt-2 form-control" placeholder="Retype Password" name="pass2" id="pass2">
+        <select name="usertype" id="" class="mt-2 form-control">
+            <option value="vendor">Dealer</option>
+            <option value="customer">Buyer</option>
+        </select>
+        <div class="text-center mt-2">
+            <button style="border-radius:5px; ">Sign In</button>
+        </div>
+    </form>
+</div>
+<script>
+    function validate(){
+        pass1obj=document.getElementById("pass1");
+        pass2obj=document.getElementById("pass2");
+        if(pass1obj.value==pass2obj.value){
+            return true;
+        }
+        else {
+            alert ("Password Mismatched");
+            return false;
+        }
+        
+    }
+</script>
+</body>
+</html>
